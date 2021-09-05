@@ -27,6 +27,7 @@ class Histogram{
 
         for(let character of text){
             let count = this.letterCounts.get(character); //取得之前的数量
+            this.letterCounts.set(character, count+1);
             this.totalLetter++;
         }
     }
